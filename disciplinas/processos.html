@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Processos de Fabricação — Prof. Angelo Costa</title>
+  <title>Processos de Fabricação — Laminação Sendzimir — Prof. Angelo Costa</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -14,90 +14,116 @@
     </header>
 
     <main>
-      <h1>Processos de Fabricação</h1>
-      <p>Estudo dos principais processos de fabricação empregados na indústria: fundição, conformação, usinagem, soldagem e processos de acabamento.</p>
+      <h1>Processos de Fabricação — Laminação (Sendzimir)</h1>
 
       <section>
-        <h2>Objetivos</h2>
+        <h2>Contexto</h2>
+        <p>Esta página aprofunda a laminação a frio em laminadores do tipo Sendzimir (Z-mill), destacando princípios de operação, projeto do conjunto de rolos, controle de tensão, parâmetros de processo, efeitos térmicos, controle de espessura e planaridade, defeitos típicos, manutenção e parâmetros práticos utilizados na indústria.</p>
+      </section>
+
+      <section>
+        <h2>1. Princípios de operação</h2>
+        <p>O laminador tipo Sendzimir é um moinho em cluster concebido para laminação a frio com controle extremamente preciso de espessura e planaridade. A configuração típica possui rolos de trabalho de pequeno diâmetro suportados por uma série de rolos intermediários e de backup (arranjo em cluster), permitindo altas pressões de contato sem deflexão excessiva dos rolos de trabalho. Isso torna o sistema ideal para produzir tiras muito finas e com alto acabamento superficial, especialmente em aços inoxidáveis e ligas não-ferrosas.</p>
+      </section>
+
+      <section>
+        <h2>2. Projeto do sistema de rolos</h2>
+        <h3>2.1. Work rolls (rolo de trabalho)</h3>
+        <p>Pequeno diâmetro; contato direto com a tira. Permitem maior rigidez aparente do sistema e melhor controle de espessura, mas são suscetíveis ao desgaste local e à deflexão se não apoiados adequadamente.</p>
+
+        <h3>2.2. Backup rolls e arranjo em cluster</h3>
+        <p>Os work rolls são suportados por rolos intermediários e por múltiplos backup rolls (configurações 20‑high ou similares). Esse arranjo reduz a flecha do sistema, distribuindo as forças e prolongando a vida útil dos work rolls. O projeto dos suportes, mancais e interfaces é crítico para precisão e manutenção do alinhamento.</p>
+
+        <h3>2.3. Materiais e revestimentos de rolos</h3>
+        <p>Escolha de materiais resistentes ao desgaste (aços cimentados, tratamentos superficiais) e possíveis revestimentos (cromo, nitretação) depende da aplicação e do material a ser laminado. O acabamento e o estado térmico do rolo influenciam a transferência de calor e a qualidade superficial da tira.</p>
+      </section>
+
+      <section>
+        <h2>3. Controle de tensão da tira (strip tension)</h2>
+        <p>O controle de tensão longitudinal é essencial para manter espessura uniforme, evitar ondulações e controlar a planaridade. Sistemas típicos incluem unidades de entrada/saída com freios e embragues, roll‑benders, tensiômetros e controle closed‑loop com leituras de gauge (óptico, láser ou X‑ray) para feedback em tempo real. A estratégia de controle considera zonas de tensão (entry, bite, exit) e pode utilizar modelos preditivos do comportamento elasto‑plástico da tira.</p>
+      </section>
+
+      <section>
+        <h2>4. Redução por passada e parâmetros de processo</h2>
+        <p>Redução por passada (Δh/h) em Sendzimir varia conforme material; valores típicos praticados em indústria ficam na faixa de 10–40% por passada para aços, podendo ser maiores para ligas moles ou aplicações específicas. Parâmetros importantes:</p>
         <ul>
-          <li>Conhecer os fundamentos dos processos de fabricação mais utilizados.</li>
-          <li>Selecionar processo adequado com base em material, tolerância e custo.</li>
-          <li>Analisar efeitos de processo na microestrutura e propriedades do material.</li>
+          <li>Redução por passada e redução total (planejamento de passes).</li>
+          <li>Velocidade de laminação (m/min) — afeta geração de calor e comportamento de tiras finas.</li>
+          <li>Taxa de avanço — sincronização com tensões e bobinas de entrada/saída.</li>
+          <li>Temperatura superficial da tira (controle por sprays de arrefecimento/lubrificação).</li>
+          <li>Lubrificação: tipo (emulsões, sintéticos), quantidade e ponto de aplicação.</li>
         </ul>
       </section>
 
       <section>
-        <h2>Conteúdo programático</h2>
-        <ol>
-          <li>Fundição: tipos, incrustações, defeitos e controle dimensional.</li>
-          <li>Conformação e estampagem: limites, forças e seleção de matrizes.</li>
-          <li>Usinagem: processos de corte, velocidades, profundidade de corte, ferramenta e desgaste.</li>
-          <li>Soldagem: tipos (MIG, TIG, eletrodo), penetração, juntas e qualificação.</li>
-          <li>Acabamento superficial e tratamentos térmicos.</li>
-        </ol>
+        <h2>5. Lubrificação e efeitos térmicos</h2>
+        <p>Durante a laminação a frio, a fricção entre rolo e tira gera calor localizado. A lubrificação apropriada reduz o coeficiente de atrito, o aquecimento e o desgaste dos rolos. Em Sendzimir, são usados sistemas de aplicação de lubrificante que asseguram uma película constante; sprays de resfriamento podem ser aplicados para controlar a temperatura e evitar variações de crown e expansão térmica que afetariam a planaridade.</p>
+
+        <p>Controle térmico também é vital para manter tolerâncias e evitar alterações microestruturais indesejadas na superfície da tira.</p>
       </section>
 
       <section>
-        <h2>Conceitos importantes</h2>
-        <p>Usinagem envolve a remoção de material por corte; parâmetros chave: velocidade de corte, avanço e profundidade. Soldagem altera a microestrutura local e exige controle térmico e seleção de consumíveis. Processos formam trade-offs entre precisão, custo e propriedades finais.</p>
+        <h2>6. Controle de crown e planaridade</h2>
+        <p>O crown (curvatura do rolo ou do perfil da tira) e a planaridade são controlados por ação combinada de:</p>
+        <ul>
+          <li>Perfilamento e moagem dos rolos (roll grinding) para produzir um perfil adequado.</li>
+          <li>Roll bending e shift (axial shift) para ajuste de distribuição de pressão ao longo da largura.</li>
+          <li>Flatness control systems (AFC) com sensores que monitoram localmente a forma da tira (ex.: medidores a laser) e atuadores hidráulicos que ajustam o perfil em tempo real.</li>
+        </ul>
+        <p>Esses métodos permitem corrigir problemas como center buckle, edge waves e variações de espessura lateral.</p>
       </section>
 
       <section>
-        <h2>Laminação — foco em laminadores tipo Sendzimir</h2>
-        <p>A laminação a frio é um processo de conformação em que uma chapa ou tira metálica passa entre rolos para reduzir espessura, melhorar propriedades superficiais e obter tolerâncias dimensionais apertadas. Entre os tipos de laminadores industriais, o laminador tipo "Sendzimir" (também conhecido como laminador Z ou laminador de rolos pequenos apoiados) é amplamente utilizado para laminação a frio de chapas finas e lâminas metálicas, especialmente em aços inoxidáveis e ligas que exigem controle dimensionais rigoroso.</p>
-
-        <h3>Características do laminador Sendzimir</h3>
+        <h2>7. Defeitos comuns e medidas corretivas</h2>
         <ul>
-          <li>Conjunto de rolos principais de pequeno diâmetro (work rolls) suportados por rolos de backup de maior diâmetro através de uma série de rolos apoiadores — design que reduz a flecha dos rolos e permite maiores reduções localizadas.</li>
-          <li>Alta rigidez do conjunto e menor deflexão do rolo, possibilitando espessuras muito finas e excelente planaridade da tira.</li>
-          <li>Bom controle de espessura e acabamento superficial, tornando-o adequado para materiais de alta resistência e acabamento crítico (ex.: aços inoxidáveis).</li>
-          <li>Operação típica com múltiplas passagens e controle de tensão entre tramos (tension control), além de avançadas estratégias de lubrificação e arrefecimento.</li>
-        </ul>
-
-        <h3>Parâmetros de processo relevantes</h3>
-        <ul>
-          <li>Redução por passada e total — deve-se balancear redução e trabalho a frio para evitar encruamento excessivo.</li>
-          <li>Velocidade de laminação e taxa de avanço — influencia temperatura de superfície e desgaste de ferramentas.</li>
-          <li>Tensão de tira (strip tension) — necessária para manter planaridade e prevenir ondulações.</li>
-          <li>Material e acabamento dos rolos — afetam a transferência de calor, desgaste e qualidade superficial.</li>
-          <li>Controle de folgas e sincronismo dos rolos para evitar marcas e variações de espessura.</li>
-        </ul>
-
-        <h3>Aspectos de qualidade e medidas</h3>
-        <p>Inspeções típicas incluem medidas de espessura (calibres), medição de planaridade, rugosidade superficial e testes mecânicos (tração, dobramento) para verificar propriedades após laminação. Processos de recozimento entre passes podem ser necessários para restaurar ductilidade em ligas encruadas.</p>
-
-        <h3>Aplicações e vantagens</h3>
-        <p>Laminadores Sendzimir são usados quando é necessária alta precisão de espessura e excelente acabamento superficial — exemplares em indústria de metais finos, fitas, faixas de aço inoxidável para componentes decorativos e técnicos, e aplicações eletrônicas. As vantagens incluem economia de material por permitir reduções finas, excelente controle dimensional e superfície de alta qualidade.</p>
-
-        <h3>Notas para projeto e experimento</h3>
-        <p>Ao projetar um experimento ou processo industrial com laminadores Sendzimir, considere: preparação da superfície da lâmina, pré-tratamentos (decapagem, limpeza), escolha de lubrificantes, regimes de redução por passada e estratégias de recozimento. Monitore desgaste de rolos e desenvolva plano de manutenção preventiva.</p>
-
-        <h3>Referências citadas</h3>
-        <ul>
-          <li>Dissertação de Carlos Lovato Neto; coorientadores: Antonio Carlos Ataíde e Angelo Ferreira Costa — (consultar a dissertação para detalhes metodológicos e dados experimentais relacionados à laminação e controle de processo).</li>
-          <li>Materiais disponibilizados pela Senzimir.com — documentação técnica e catálogos do fabricante (consultar para especificações de equipamentos e recomendações operacionais).</li>
-          <li>Groover, M. — Fundamentos de Mecânica de Manufatura (para revisão de conceitos de laminação e parâmetros de usinagem/produção).</li>
+          <li><strong>Ondulação de borda (edge wave):</strong> pode ser causada por excesso de compressão nas bordas — corrigir com controle de tensão lateral, ajustar redução local e perfil dos rolos.</li>
+          <li><strong>Centro em buckling/centro alto:</strong> geralmente por tensão insuficiente na zona de saída — aumentar tensão de strip e revisar sequência de passes.</li>
+          <li><strong>Variação de espessura (thickness variation):</strong> verificar desgaste irregular do rolo, recalibrar gauges e ajustar perfil do rolo.</li>
+          <li><strong>Riscos e marcas superficiais:</strong> provenientes de partículas ou imperfeições nos rolos — polir/limpar e monitorar partículas; revisão de lubrificação.</li>
+          <li><strong>Fadiga de rolos e trincas:</strong> programa de inspeção e troca preventiva de rolos; controle de carga e uso de materiais de alta resistência para rolos.</li>
         </ul>
       </section>
 
       <section>
-        <h2>Vídeo recomendado</h2>
-        <p>Carregue o vídeo ao clicar.</p>
+        <h2>8. Manutenção e confiabilidade</h2>
+        <p>Manutenção preventiva é crítica: inclui inspeção periódica de rolamentos, verificação do alinhamento do cluster, controle de desgaste dos work rolls, balanceamento e monitoramento de vibração. Planos de troca rápida de rolos (quick change) reduzem tempo de parada e perda de produção. Ferramentas de monitoramento (condition monitoring) ajudam a prever falhas e otimizar janelas de manutenção.</p>
+      </section>
+
+      <section>
+        <h2>9. Parâmetros típicos de processo (ordens de grandeza)</h2>
+        <ul>
+          <li>Redução por passada (aço): 10–40% (varia conforme liga e objetivo).</li>
+          <li>Espessuras finais típicas: aços inoxidáveis laminados a frio: 0,05–2,0 mm; ligas finas podem chegar a microfilmes.</li>
+          <li>Largura de tira: 100–1.200 mm (configuração do laminador).</li>
+          <li>Velocidade de laminação: dezenas a centenas m/min (depende do material e configuração).</li>
+          <li>Pressões de contato: valores elevados, dependentes do conjunto rolos; dimensionamento por projeto.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. Estudos de controle e otimização</h2>
+        <p>Literatura técnica apresenta estratégias de controle ótimo para espessura e planaridade em Sendzimir (ex.: controle em tempo real com modelos preditivos e AFC). Pesquisas recentes tratam otimização multivariável de tensões, redução e perfil para maximizar qualidade e rendimento operacional.</p>
+        <p>Exemplos de trabalhos: controle ótimo de espessura e planaridade em Sendzimir (ver artigos em periódicos técnicos e proceedings).</p>
+      </section>
+
+      <section>
+        <h2>11. Referências e fontes técnicas</h2>
+        <p>As referências abaixo foram consultadas para elaborar este conteúdo e podem ser usadas para aprofundamento técnico:</p>
+        <ul>
+          <li>Sendzimir Company — Whitepapers e documentação técnica: <a href="https://sendzimir.com/whitepapers/" target="_blank" rel="noopener">https://sendzimir.com/whitepapers/</a> e página de produtos: <a href="https://sendzimir.com/z-high-mills-cold-reversing/" target="_blank" rel="noopener">https://sendzimir.com/z-high-mills-cold-reversing/</a></li>
+          <li>Artigo técnico: "Optimal Control of Thickness and Flatness for the 20 Rolls Sendzimir cluster mill" — ScienceDirect (exemplo de controle em tempo real): <a href="https://www.sciencedirect.com/science/article/pii/S1474667017572092" target="_blank" rel="noopener">https://www.sciencedirect.com/science/article/pii/S1474667017572092</a></li>
+          <li>Voestalpine / Uddeholm — notas técnicas sobre laminação com Sendzimir rolls: <a href="https://www.voestalpine.com/highperformancemetals/international/en-at/applications/cold-rolling-incl-sendzimir-rolls/" target="_blank" rel="noopener">voestalpine</a>, <a href="https://www.uddeholm.com/en/applications/cold-rolling-incl-sendzimir-rolls/" target="_blank" rel="noopener">Uddeholm</a></li>
+          <li>Repositório Tohoku University — Dissertação de Carlos Lovato Neto (registro encontrado): <a href="https://tohoku.repo.nii.ac.jp/records/20977" target="_blank" rel="noopener">https://tohoku.repo.nii.ac.jp/records/20977</a>
+            <br/>Citação sugerida: Lovato Neto, C. (2004). Dissertação: parâmetros de laminação e otimização técnico-econômica de laminador Sendzimir. Tohoku University. (Ver repositório da universidade para acesso ao texto completo).</li>
+          <li>MetalZenith — artigo de referência técnica sobre Sendzimir Mill: <a href="https://metalzenith.com/blogs/steel-production-processing-terms/sendzimir-mill-z-mill-precision-cold-rolling-in-steel-manufacturing" target="_blank" rel="noopener">metalzenith</a></li>
+        </ul>
+        <p>Observação: recomendo baixar e armazenar localmente os whitepapers da Sendzimir e a dissertação (se permissível) para referência direta.</p>
+      </section>
+
+      <section>
+        <h2>Vídeo demonstrativo</h2>
         <div class="yt-placeholder" data-video-id="RvRQ6y6a_A4" data-src="https://www.youtube-nocookie.com/embed/RvRQ6y6a_A4"></div>
-        <p class="video-caption">Aula completa sobre processos de fabricação: usinagem, soldagem e moldagem.</p>
-      </section>
-
-      <section>
-        <h2>Resumo / Transcrição (resumida)</h2>
-        <p>Os processos de fabricação determinam forma, propriedades e custos de componentes. A laminação em laminadores Sendzimir permite produzir tiras finas com excelente controle de espessura e superfície, sendo especialmente indicada para aços inoxidáveis e aplicações de alta precisão. O controle de tensões, redução por passada e manutenção de rolos são pontos críticos para garantir qualidade e vida útil do conjunto de laminação.</p>
-      </section>
-
-      <section>
-        <h2>Referências</h2>
-        <ul>
-          <li>Groover, M. - Fundamentos de Mecânica de Manufatura</li>
-          <li>ASM Handbook - Processos e Materiais</li>
-        </ul>
+        <p class="video-caption">Aula sobre processos de fabricação (inclui trechos de laminação e usinagem) — carregue ao clicar.</p>
       </section>
 
     </main>
