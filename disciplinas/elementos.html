@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elementos de Máquinas — Prof. Angelo Costa</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header-inner">
+      <a class="brand" href="/">Prof. Angelo Costa</a>
+      <nav><a href="/">Início</a> • <a href="/disciplinas/elementos.html">Elementos</a></nav>
+    </header>
+
+    <main>
+      <h1>Elementos de Máquinas</h1>
+      <p>Esta disciplina aborda elementos fundamentais para o projeto e a montagem de máquinas: eixos, chavetas, parafusos, molas, engrenagens, correias, correntes, rolamentos e mancais, com foco em dimensionamento, seleção e modos de falha.</p>
+
+      <section>
+        <h2>Objetivos</h2>
+        <ul>
+          <li>Compreender a função dos principais elementos de máquinas.</li>
+          <li>Aplicar métodos de dimensionamento para eixos, parafusos e molas.</li>
+          <li>Selecionar rolamentos e engrenagens adequadas a uma aplicação.</li>
+          <li>Analisar modos de falha, fadiga e manutenção preventiva.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Conteúdo programático</h2>
+        <ol>
+          <li>Eixos e árvores: carregamentos, critérios de projeto, chaveamento.</li>
+          <li>Parafusos e uniões: tensões de tração, aperto, calços.</li>
+          <li>Molas: tipos, constante, energia armazenada.</li>
+          <li>Engrenagens: relação de transmissão, tipos (reto, helicoidal), carga.</li>
+          <li>Correias e correntes: seleção, tensão, vida útil.</li>
+          <li>Rolamentos e mancais: tipos, seleção, lubrificação e vida L10.</li>
+          <li>Fadiga e critérios de falha: Goodman, Soderberg, Gerber.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Conceitos e fórmulas principais</h2>
+        <ul>
+          <li>Tensão simples: σ = F / A</li>
+          <li>Tensão de flexão: σ = M y / I</li>
+          <li>Tensão de torção: τ = T r / J</li>
+          <li>Energia em molas helicoidais: U = 1/2 k x^2</li>
+          <li>Vida útil de rolamentos (L10): L10 = (C / P)^p • 10^6 revoluções (C capacidade dinâmica, P carga equivalente, p=3 para rolamentos de esferas)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Vídeo recomendado</h2>
+        <p>Vídeo selecionado e carregado sob demanda (clique para reproduzir):</p>
+        <div class="yt-placeholder" data-video-id="19duYMdiXi0" data-src="https://www.youtube-nocookie.com/embed/19duYMdiXi0"></div>
+        <p class="video-caption">Elementos de Máquinas - Rolamentos e eixos (vídeo didático)</p>
+      </section>
+
+      <section>
+        <h2>Resumo / Transcrição (resumida)</h2>
+        <p>Rolamentos suportam cargas radiais e/ou axiais e reduzem atrito entre superfícies em movimento relativo. Seleção envolve carga equivalente, velocidade e condições ambientais. Eixos devem ser dimensionados considerando flexão, torção e tensões combinadas; chavetas e chaves transmitem torque e exigem verificação de tensão de cisalhamento. Em projeto, sempre verificar folgas, ajustes e lubrificação para garantir vida útil adequada.</p>
+      </section>
+
+      <section>
+        <h2>Referências</h2>
+        <ul>
+          <li>Shigley, J. E. - Mechanical Engineering Design</li>
+          <li>Bareca, E. - Elementos de Máquinas (apostila)</li>
+          <li>Normas ABNT e catálogos de fabricantes de rolamentos</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="/">Voltar ao início</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // init lazy placeholders (same script used in index)
+    document.addEventListener('DOMContentLoaded', function(){
+      const players = document.querySelectorAll('.yt-placeholder');
+      players.forEach(function(player){
+        const videoId = player.dataset.videoId;
+        const src = player.dataset.src;
+        player.style.backgroundImage = 'url(https://img.youtube.com/vi/' + videoId + '/hqdefault.jpg)';
+        player.classList.add('thumb');
+        player.addEventListener('pointerenter', function(){
+          if (!player.dataset.preconnected) {
+            const link = document.createElement('link');
+            link.rel = 'preconnect';
+            link.href = 'https://www.youtube-nocookie.com';
+            document.head.appendChild(link);
+            player.dataset.preconnected = 'true';
+          }
+        }, {once:true});
+        player.addEventListener('click', function(){
+          const iframe = document.createElement('iframe');
+          iframe.setAttribute('src', src + '?rel=0&modestbranding=1');
+          iframe.setAttribute('frameborder','0');
+          iframe.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+          iframe.setAttribute('allowfullscreen','');
+          iframe.loading = 'lazy';
+          player.innerHTML = '';
+          player.appendChild(iframe);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
