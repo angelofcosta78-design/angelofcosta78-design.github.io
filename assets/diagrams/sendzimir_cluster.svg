@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400">
+  <style>
+    .roll { fill:#cfcfcf; stroke:#888; stroke-width:2 }
+    .label { font-family: Arial, sans-serif; font-size:14px; fill:#222 }
+  </style>
+  <!-- backup rolls top -->
+  <g transform="translate(0,40)">
+    <circle class="roll" cx="200" cy="40" r="40" />
+    <circle class="roll" cx="260" cy="40" r="40" />
+    <circle class="roll" cx="320" cy="40" r="40" />
+    <circle class="roll" cx="380" cy="40" r="40" />
+    <text class="label" x="200" y="95">Backup rolls</text>
+  </g>
+  <!-- intermediate rolls -->
+  <g transform="translate(0,110)">
+    <circle class="roll" cx="300" cy="40" r="20" />
+    <text class="label" x="260" y="95">Intermediate rolls</text>
+  </g>
+  <!-- work rolls -->
+  <g transform="translate(0,170)">
+    <rect x="300" y="30" width="180" height="30" rx="8" ry="8" fill="#bbb" stroke="#666" />
+    <text class="label" x="360" y="55">Work rolls (small diameter)</text>
+  </g>
+  <!-- strip -->
+  <g transform="translate(0,260)">
+    <rect x="220" y="10" width="360" height="20" fill="#ffd" stroke="#c90" />
+    <text class="label" x="360" y="45">Strip / Tira</text>
+  </g>
+  <!-- annotations -->
+  <line x1="360" y1="200" x2="360" y2="270" stroke="#444" stroke-dasharray="4"/>
+  <text class="label" x="370" y="235">Contact zone</text>
+  <text class="label" x="20" y="380">Figura: Esquema simplificado do arranjo cluster de um laminador Sendzimir (work rolls suportados por backup/intermediate rolls).</text>
+</svg>

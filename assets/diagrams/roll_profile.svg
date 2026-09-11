@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <style>
+    .axis { stroke:#444; stroke-width:1 }
+    .line { stroke:#2a88d8; stroke-width:3; fill:none }
+    .label { font-family: Arial, sans-serif; font-size:12px; fill:#222 }
+  </style>
+  <line x1="50" y1="150" x2="750" y2="150" class="axis" />
+  <path d="M50 150 C200 120, 400 130, 550 100, 750 110" class="line"/>
+  <text class="label" x="50" y="170">Largura da tira →</text>
+  <text class="label" x="300" y="80">Perfil de crown / pressão</text>
+  <text class="label" x="20" y="20">Figura: exemplo qualitativo de perfil de pressão (crown) ao longo da largura.</text>
+</svg>
